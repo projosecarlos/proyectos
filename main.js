@@ -1,9 +1,7 @@
-/*import {tresEnRaya} from './tresEnRaya.js';
-var a = new tresEnRaya();*/
+import {tresEnRaya} from './tresEnRaya.js';
+var a = new tresEnRaya();
 
 function generaTabla() {
-  import {tresEnRaya} from './tresEnRaya.js';
-  let a = new tresEnRaya();
     // Obtener la referencia del elemento body
     var body = document.getElementsByTagName("body")[0];
    
@@ -51,6 +49,8 @@ function generaTabla() {
   }
 
   function juegoNuevo(){
+    a.tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    a.jugador = 0;
     let tablero = document.getElementsByTagName('table')[0];
     let boton = document.getElementsByTagName('button')[0]; 
     document.body.removeChild(tablero);

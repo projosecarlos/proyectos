@@ -1,5 +1,3 @@
-/* document.open(); */
-
 //Creamos una clase con los métodos para utilizarlo
 export class tresEnRaya{
     constructor(){
